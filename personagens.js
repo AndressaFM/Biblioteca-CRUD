@@ -24,7 +24,7 @@ function enviarImagem(){
 
     mostrarTudo.appendChild(figureElement);
 
-    let personagens = []; //Array
+    let personagens = []; //Array de personagens
     if (localStorage.hasOwnProperty("personagens")) {
         personagens = JSON.parse(localStorage.getItem("personagens"))
     }
