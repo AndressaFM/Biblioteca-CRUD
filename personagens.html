@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="icon" href="./Imagens/logo1.jfif" class="icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+</head>
+<body onload="carregarDados()">
+    <header>
+        <h1>Controle de Leitura</h1>
+        <nav>
+            <a href="./index.html">Página Inicial</a>
+            <a href="./personagens.html">Personagens</a>
+            <a href="./lista.html">Lista de leitura</a>
+        </nav>
+    </header>
+        <section>
+            <form id="form" >
+                <fieldset>
+                    <legend>Insira Imagens dos seus personagens favoritos</legend>
+                    <label for="personagens"> Personagem: <input type="file" name="personagens" id="personagem" accept="image/*,.pdf"></label>
+                    <label for="nomePersonagem">Nome do personagem: <input type="text" name="nome" id="nomePersonagens"></label>
+                    <button type="button"  onclick="enviarImagem()" class="button2">Enviar</button>
+                    <button type="button"  onclick="Limpar()" class="button2">Limpar</button>
+                </fieldset>
+            </form>
+            <button onclick="apagarTudo()" class="button1">Apagar todos os Arquivos</button>
+            <button onclick="editarImagens()" class="button2">Editar</button>
+            <div id="mostrarTudo" class="imagemLegenda">
+                <figure>
+
+                </figure>
+            </div>
+        </section>
+    
+    <script src="./personagens.js"></script>
+    <script src="./editar.js"></script>
+</body>
+</html>

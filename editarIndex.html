@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Edição</title>
+    <link rel="icon" href="./Imagens/logo1.jfif" class="icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <script src="./editar.js"></script>
+    <script src="./index1.js"></script>
+</head>
+<body onload="preencher()">
+    <header>
+        <h1>EDIÇÃO</h1>
+        <nav>
+            <a href="./index.html">Página Inicial</a>
+        </nav>
+    </header>
+    <section>
+        <form id="form">
+        <fieldset>
+            <legend>Edite:</legend>
+           <label for="livros">Livros: <input type="text" name="livros" id="livros2" value=""> </label>
+           <label for="autor">Autor:<input type="text" name="autor" id="autores2" value=""></label>
+           <label for="editora">Editora:<input type="text" name="editora" id="editores2" value=""></label>
+           <label for="Sim">O livro possui continuação: <input type="checkbox" name="continuação" id="Sim" value="Sim" class="marcar" onclick="checkbox('Sim')"></label>
+           <label for="Não">Sim</label>
+           <input type="checkbox" name="continuação" id="Não" value="Não" class="marcar" onclick="checkbox('Não')">
+           <label for="Não">Não</label><br>
+           <button type="button" class="button2" onclick="salvarDados()">Salvar</button>
+          <button onclick="limpar()" id="limpar" class="button2" >Limpar</button>
+        </fieldset>
+        </form>
+    </section>
+        
+</body>
+</html>

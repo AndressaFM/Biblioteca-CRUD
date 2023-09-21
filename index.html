@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKS</title>
+    <link rel="icon" href="./Imagens/logo1.jfif" class="icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <script defer src="./index1.js"></script>
+    <script defer src="./editar.js"></script>
+</head>
+<body onload="recuperandoDados()">
+    <header>
+        <h1>Controle de Leitura</h1>
+        <nav>
+            <a href="./index.html">Página Inicial</a>
+            <a href="./personagens.html">Personagens</a>
+            <a href="./lista.html">Lista de leitura</a>
+        </nav>
+    </header>
+    <section>
+            <form id="form">
+            <fieldset>
+                <legend>Preencha com os livros já lidos:</legend>
+               <label for="livros">Livros: <input type="text" name="livros" id="livros"> </label>
+               <label for="autor">Autor:<input type="text" name="autor" id="autor"></label>
+               <label for="editora">Editora:<input type="text" name="editora" id="editora"></label>
+               <label for="Sim">O livro possui continuação: <input type="checkbox" name="continuação" id="Sim" value="Sim" class="marcar" onclick="checkbox('Sim')"></label>
+               <label for="Não">Sim</label>
+               <input type="checkbox" name="continuação" id="Não" value="Não" class="marcar" onclick="checkbox('Não')">
+               <label for="Não">Não</label><br>
+               <button type="button" onclick="salvarDados()" class="button2">Salvar</button>
+              <button onclick="limpar()" id="limpar" class="button2" >Limpar</button>
+            </fieldset>
+            </form>
+            
+        <table id="tabela">
+             <thead id="tabela2">
+                <td><strong> Livros</strong></td>
+                <td><strong>Autor</strong></td>
+                <td><strong>Editora</strong></td>
+                <td colspan="1"><strong>Continuação</strong></td>
+                <td><strong>Edição de itens</strong></td>
+             </thead>
+             <tbody id="tabela1">
+                
+             </tbody>
+        </table>
+        <button onclick="apagarTudo()" class="apagarTudo">Apagar todos os dados da sua lista</button>
+    </section>
+    
+</body>
+</html>

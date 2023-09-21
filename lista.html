@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="icon" href="./Imagens/logo1.jfif" class="icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+</head>
+<body onload="mostrar()">
+    <header >
+        <h1>Controle de Leitura</h1>
+        <nav>
+            <a href="./index.html">Página Inicial</a>
+            <a href="./personagens.html">Personagens</a>
+            <a href="./lista.html">Lista de leitura</a>
+        </nav>
+    </header>
+    <section >
+        <fieldset class="espaço">  <label for="livro">Livro: <input type="text" name="livro" id="livro"></label>
+        <button type="button"  onclick="enviarLivro()" class="button2">Enviar</button>
+        <button type="button"  onclick="limparLivro()" class="button2">Limpar</button>
+    </fieldset>
+    <button class="button1" onclick="apagarTudo()" class="button2">Limpar todos os dados</button>
+        <h4>Lista de leituras futuras</h4>
+        <ul id="lista" class="personalizar">
+        </ul>
+    </section>
+    <script src="./lista.js"></script>
+    <script src="./editar.js"></script>
+</body>
+</html>
